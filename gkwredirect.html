@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+  		<title>GKW Redirect</title>
+  		<style type="text/css">
+
+  			/*Button CSS*/
+  			@import url(http://weloveiconfonts.com/api/?family=entypo);
+			* {
+			  margin: 0;
+			  padding: 0;
+			  box-sizing: border-box;
+			}
+
+			button:before {
+			  font-family: 'entypo', sans-serif;
+			  color: white;
+			  position: absolute;
+			  right: 25px;
+			  font-size: 2em;
+			  top: 15%;
+			  z-index: 10;
+			}
+
+			body {
+			  background-color: #f2f2f2;
+			}
+
+			section {
+			  width: 100%;
+			  padding: 1em 0;
+			}
+
+			.container {
+			  margin: 0 auto;
+			  text-align: center;
+			}
+
+			button {
+			  border: none;
+			  outline: none;
+			  background-color: #04426A;
+			  letter-spacing: 1px;
+			  color: white;
+			  text-transform: uppercase;
+			  font-weight: normal;
+			  width: 30%;
+			  max-width: 500px;
+			  position: relative;
+			  -webkit-border-radius: 4px;
+			  border-radius: 4px;
+			  font-size: 1.4em;
+			  text-align: left;
+			  padding: 20px 3.9em;
+			}
+			@media (max-width: 600px) {
+			  button {
+			    padding: 1.5em 2.5em;
+			    font-size: 1em;
+			  }
+			}
+			button:hover {
+			  cursor: pointer;
+			}
+			button:after {
+			  position: absolute;
+			  content: "";
+			  top: 0;
+			  bottom: 0;
+			  right: 0;
+			  width: 20%;
+			  background-color: #2E80B5;
+			  transition: width 0.7s;
+			}
+			@media (max-width: 600px) {
+			  button:after {
+			    width: 30%;
+			  }
+			}
+
+			button:hover:after {
+			  transition: width 0.7s;
+			  width: 140px;
+			  cursor: pointer;
+			}
+			@media (max-width: 600px) {
+			  button:hover:after {
+			    width: 120px;
+			  }
+			}
+
+ 			/*FLW*/
+  			#flw img {
+  				width: 40% !important;
+  				display: block !important;
+  				margin: auto !important;
+  			}
+
+  			/*IS-NOW*/
+  			h2#is-now {
+			    text-align: center;
+			    text-transform: uppercase;
+			    margin: -25px 0 20px 0;
+			    font-family: 'entypo', sans-serif;
+			    color: #949598;
+			    font-weight: 400;
+			    padding: 20px 25px 0 0;
+			}
+
+  			 /*GKW*/
+  			#gkw img {
+  				width: 31% !important;
+  				display: block !important;
+  				margin: auto !important;
+  			}
+
+  			/*REDIRECTING*/
+  			h1#redirect {
+			    text-align: center;
+			    text-transform: uppercase;
+			    margin-top: 25px;
+			    font-family: 'entypo', sans-serif;
+			    color: #949598;
+			    font-weight: 400;
+			    padding-right: 25px;
+  			}
+
+
+  		</style> 
+	</head>
+
+	<body>
+
+		<section>
+			<div id="flw">
+				<img src="http://cp1.cpasitesolutions.com/~flwcpas/images/FLW_logo_4_website.png" alt="FLW">
+			</div>
+
+			<h2 id="is-now">is now</h2>
+
+			<div id="gkw">
+				<img src="http://cp1.cpasitesolutions.com/~flwcpas/images/GKW-photos/GKW_logo.png" alt="GKW">
+			</div>
+		</section>
+
+  		<section>
+  			<div class="container">
+  				<a href="http://www.gkwaccounting.com/">
+	    			<button class="entypo-right-open-big">Continue</button>  
+  				</a>
+  			</div>
+  			<h1 id="redirect">Redirecting. . .</h1>
+		</section>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) { 
+	  		window.setTimeout(function(){
+	       		console.log('redirect');
+	  			window.location = 'http://www.gkwaccounting.com/';
+	  		}, 3000);
+		});
+
+	</script>	
+
+	</body>
+</html>
+
+
+
+
+
+
